@@ -1,0 +1,40 @@
+.button {
+    display: inline-block;
+    background: #fc3;
+    background: linear-gradient(#fc3, #f91);
+    border: solid 1px #999;
+    border-radius: 5px;
+    color: white;
+    margin: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+@keyframes buttonAnimation {
+    from { padding: 10px 20px; font-size: inherit; }
+    to { padding: 15px 30px; font-size: 24px; }
+}
+
+.button:hover {
+    border-color: #333;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.9);
+    background: #f91;
+    background:linear-gradient(to top, #fc3, #f91);
+    animation-name: buttonAnimation;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+.alt-button {
+    background: radial-graident(#fc3, #f91);
+}
+
+.alt-button:hover {
+    background: raial-gradient(#f91, #fc3);
+}
